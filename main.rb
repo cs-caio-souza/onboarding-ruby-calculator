@@ -1,8 +1,14 @@
-def get_int_values
-  [gets, gets].map{ |s| s.chomp.to_i }
+def add
+  puts "Which numbers would you like to add?"
+  puts "The sum is... #{gets.to_i - gets.to_i}"
 end
 
-puts "Would you like to [add], [subtract], [multiply], or [divide]?"
-response = gets.chomp
-
-puts "Sorry, I'm computing the answer to life, universe and everything. Try again at a later release."
+loop do
+  puts "Would you like to [a]dd or [q]uit?"
+  case gets.chomp
+  when "a"
+    add
+  when "q"
+    break
+  end
+end
