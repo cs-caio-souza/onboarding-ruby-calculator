@@ -1,6 +1,6 @@
 def add
   puts "Which numbers would you like to add?"
-  puts "The sum is... #{gets.to_i - gets.to_i}"
+  puts "The sum is... #{gets.to_i + gets.to_i}"
 end
 
 loop do
