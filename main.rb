@@ -13,9 +13,13 @@ def mul
   puts "The result is... #{gets.to_i * gets.to_i}"
 end
 
+def div
+  puts "Which numbers would you like to divide?"
+  puts "The result is... #{gets.to_i / gets.to_i}"
+end
 
 loop do
-  puts "Would you like to [a]dd, [s]ubtract, [m]ultiply or [q]uit?"
+  puts "Would you like to [a]dd, [s]ubtract, [m]ultiply, [d]ivide or [q]uit?"
   case gets.chomp
   when "a"
     add
@@ -23,6 +27,8 @@ loop do
     sub
   when "m"
     mul
+  when "d"
+    div
   when "q"
     break
   end
